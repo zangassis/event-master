@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EventMaster</name>
+    </assembly>
+    <members>
+        <member name="T:EventMaster.Data.EventController">
+            <summary>
+            Controller for managing events.
+            </summary>
+        </member>
+        <member name="M:EventMaster.Data.EventController.GetAllEvents">
+            <summary>
+            Get all events.
+            </summary>
+            <returns>List of events.</returns>
+        </member>
+        <member name="M:EventMaster.Data.EventController.GetEventById(System.Guid)">
+            <summary>
+            Get an event by ID.
+            </summary>
+            <param name="id">Event ID.</param>
+            <returns>Event details if found, otherwise returns NotFound.</returns>
+        </member>
+        <member name="M:EventMaster.Data.EventController.CreateEvent(EventMaster.Models.Event)">
+            <summary>
+            Create a new event.
+            </summary>
+            <param name="entity">Event details for creation.</param>
+            <returns>Created event details.</returns>
+        </member>
+        <member name="M:EventMaster.Data.EventController.UpdateEvent(System.Int32,EventMaster.Models.Event)">
+            <summary>
+            Update an existing event.
+            </summary>
+            <param name="id">Event ID.</param>
+            <param name="entity">Updated event details.</param>
+            <returns>NoContent if successful, NotFound if the event is not found.</returns>
+        </member>
+        <member name="M:EventMaster.Data.EventController.DeleteEvent(System.Int32)">
+            <summary>
+            Delete an event by ID.
+            </summary>
+            <param name="id">Event ID.</param>
+            <returns>NoContent if successful, NotFound if the event is not found.</returns>
+        </member>
+        <member name="P:EventMaster.Models.Event.Name">
+            <summary>
+            The name of the event.
+            </summary>
+        </member>
+        <member name="P:EventMaster.Models.Event.Date">
+            <summary>
+            The date of the event.
+            </summary>
+        </member>
+        <member name="P:EventMaster.Models.Event.Location">
+            <summary>
+            The location of the event.
+            </summary>
+        </member>
+        <member name="P:EventMaster.Models.Event.Speakers">
+            <summary>
+            The list of speakers for the event.
+            </summary>
+        </member>
+    </members>
+</doc>
